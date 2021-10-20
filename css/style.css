@@ -1,0 +1,78 @@
+/* VARIABLES */
+:root {
+    --oneColor: #878a8e;
+    --twoColor: #3367d6;
+}
+/* RESET */
+* {
+    color: ;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* FONT */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+/* HEADER-TOP */
+.header-top {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--oneColor);
+}
+.header-top .col-right,
+.header-top .col-left {
+    display: flex;
+    align-items: center;
+}
+.header-top .col-left h2,
+.header-top .col-right img {
+    margin-left: 10px;
+}
+.header-top .col-left h2 {
+    font-size: 32px;
+}
+.header-top .col-left img {
+    width: 125px;
+}
+.header-top .col-right img {
+    width: 50px;
+    border-radius: 50%;
+}
+/* HEADER-BOTTOM */
+.header-bottom {
+    padding: 0px 20px;
+    border-bottom: 1px solid var(--oneColor);
+}
+.header-bottom nav ul {
+    display: flex;
+    list-style: none;
+}
+.header-bottom nav ul li:not(:last-child) {
+    margin-right: 30px;
+}
+.header-bottom nav ul li {
+    font-size: 20px;
+    padding: 15px 0px;
+}
+.header-bottom nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--oneColor);
+}
+.active {
+    border-bottom: 5px solid var(--twoColor);
+}
+.active a {
+    color: var(--twoColor) !important;
+}
+/* MAIN */
+main {
+    padding: 100px 0px;
+}
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
